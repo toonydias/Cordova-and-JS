@@ -1,4 +1,4 @@
-var numeroX = 5 /*Math.floor(Math.random() * 100 + 1)*/
+var numeroX = Math.floor(Math.random() * 100 + 1)
 var rodada = 1
 var palpiteTxt = document.querySelector('#campoPalpite')
 var enviarPalpite = document.querySelector('.envioPalpite')
@@ -7,6 +7,7 @@ var resultado = document.querySelector('.ultimoResultado')
 var maisoumenos = document.querySelector('.baixoOuAlto')
 var footer = document.querySelector('.resultadoParas')
 var iniciar = document.createElement("button")
+palpiteTxt.focus()
 enviarPalpite.addEventListener('click', palpitar)
 function palpitar() {
     var chute = Number(palpiteTxt.value)
